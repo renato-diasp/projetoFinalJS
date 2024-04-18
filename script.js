@@ -22,7 +22,7 @@ function livro(titulo, autor, capa, genero, nDePaginas, nota, editora, ano) {
   function unhiddenText(){
     const bookName = document.getElementById('bookName');
     
-    if(bookName.value === 'Tudo é Rio' || bookName.value === 'tudo é rio'){
+    if(bookName.value === 'Tudo é Rio' || bookName.value === 'tudo é rio' || bookName.value === 'Tudo é rio'){
       book1.innerHTML = `      
       <div>
         <img src="https://m.media-amazon.com/images/I/816Udvs9O7L._AC_UF1000,1000_QL80_.jpg">
