@@ -24,6 +24,7 @@ body{
 #container{
   padding: 1.6rem;
   width: 40rem;
+  height: 100vh;
   margin: 0 auto;
 
   text-align: center;
@@ -56,19 +57,78 @@ body{
 .description{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   gap: 1rem;
 }
 
-.description h2{
-  font-size: 2rem;
-  /* margin-bottom: 2rem; */
-}
  .description img{
   
   width: 20rem;
   aspect-ratio: 4/6;
   overflow: hidden;  
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;   
+}
+
+.info p{
+  font-size: 2rem;
+  
+}
+.info span{
+  font-weight: 700;
+}
+
+
+@media(min-width:768px){
+  #container{
+    width: 112rem;
+  }
+
+  #container h1{
+    font-size: 7rem;
+  }
+
+  #container input{
+    width: 50%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem 0 0 .5rem;
+  
+    font-size: 2rem;
+  }
+
+  #container button{
+    width: 10%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 .5rem .5rem 0;
+  
+    font-size: 2rem;
+  }
+
+  .description{
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;   
+  }
+  
+  .info p{
+    font-size: 2rem;
+    text-align: left;
+  }
+  .info span{
+    font-weight: 700;
+  }
 }
