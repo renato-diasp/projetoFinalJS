@@ -18,7 +18,9 @@ html, body{
 }
 
 body{
-  font-size: 1.6rem,
+  font-size: 1.6rem;
+  background-image: url(./assets/bg.avif);
+  
 }
 
 #container{
@@ -52,6 +54,16 @@ body{
   border-radius: .5rem;
 
   font-size: 1.6rem;
+}
+
+#obs{
+  
+  font-size: 1.2rem;
+  font-weight: 900;
+
+  padding: .3rem;
+  border-radius: .5rem;
+  background-color: rgba(242, 236, 235, 0.9);
 }
 
 .description{
